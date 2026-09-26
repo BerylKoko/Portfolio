@@ -39,21 +39,23 @@ Render is optional. Any static host can serve the same build output.
 ## Source of truth
 
 - [McQueen](https://github.com/BerylKoko/F1-Analysis): season CSVs, Python analysis, documented conventions and completed editorial site. 2026 is explicitly YTD.
-- [Race Lens](https://github.com/BerylKoko/Race-Lens): illustrative replay prototype, supplemented by Beryl's supplied interface analysis and interview-protocol PDFs. No participant findings or outcome metrics are inferred from the protocol.
+- [Race Lens](https://github.com/BerylKoko/Race-Lens): interface audit, task-based interview protocol, design implications and interactive replay prototype.
 - [Job Market](https://github.com/BerylKoko/Job-Market-Skills-Analysis): current notebook, README, `results/findings.md` and current charts. The older `results/summary.csv` uses a different grouping and is not used here.
 - [Bookmatch](https://github.com/BerylKoko/Book-Recommendation): book-discovery interface, Flask routes, catalog retrieval, recommendation modules and regression tests. The case study focuses on product decisions, evidence-based matching, metadata handling and the finished interface.
-- [Harvest](https://github.com/BerylKoko/Harvest-Festival): finished pages, responsive behaviour and original sketches. Historical student event guide; not an official current event service.
+- [Harvest](https://github.com/BerylKoko/Harvest-Festival): finished responsive event-guide pages, front-end behaviour and original wide/narrow layout sketches.
 
 ## Current status
 
-The current site is a deployable working version of the portfolio. It contains the five completed projects and their supporting visuals and artifacts.
+The portfolio is deployable and includes five completed projects with live/source links, real project visuals and hand-edited case studies.
 
-The next portfolio pass should focus on the case studies themselves: replace summary-style project pages with richer visual walkthroughs that show the actual reasoning, research, analysis, iterations, interfaces, and decisions behind each project. Preserve each project's individual identity rather than forcing the same repeated section structure across all five.
+The September 2026 storytelling pass expands the project pages beyond summary paragraphs:
 
-In particular, Race Lens should make fuller use of the interface audit, task-based interview protocol, design implications, and prototype iterations; McQueen should preserve the visual/data-story character of the original project; Job Market should foreground actual analysis and findings; Bookmatch should show the product experience and recommendation decisions through the interface; and Harvest can remain a lighter visual/front-end case study.
+- Race Lens now walks from interface audit → research tasks → design translation → prototype iteration.
+- McQueen shows the peak baseline, constructor context, teammate comparison and final interpretation.
+- Job Market surfaces the relational workflow, role counts, entry-level mix, skills and salary caveats.
+- Bookmatch shows the discovery flow, recommendation logic, product states and implementation decisions.
+- Harvest stays lighter, focusing on information architecture, sketches, responsive design and front-end behaviour.
 
-Avoid defensive or unnecessary provenance commentary in portfolio copy. Keep third-party attribution only where it is genuinely required and in the appropriate source documentation.
-
-The repeated "How I work" block belongs on the homepage, not at the bottom of every case study. Project pages should end with a project-specific conclusion/result and a visually meaningful transition to the next project.
+The homepage keeps the broader through-line; the individual case studies carry the project-specific reasoning. Detailed source/licensing documentation stays in the relevant project repositories rather than becoming portfolio copy.
 
 The site is configured for static deployment on Render via `render.yaml`.
