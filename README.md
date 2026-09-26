@@ -51,3 +51,7 @@ Screenshots depict Beryl's actual projects. Research crops and PDFs come from Be
 ## Verification
 
 `npm run check` checks every page's viewport, primary heading, image alt attributes, local assets, page links and fragment targets. `npm run build` produces the static output. Visual desktop/mobile QA should be run in a browser before launch; the authoring environment blocked the local browser preview for this content pass. Existing live project interfaces were inspected directly and captured for the case studies.
+
+## Visual foundation
+
+The presentation restores the blue V1 from the original Site repository at commit `e6ce8a2`. The recovered stylesheet and homepage source are retained in `design/` for traceability (not included in the production build). V1 supplies the white/navy/royal-blue palette, two-column work grid, image panels, navigation and type family. The current presentation uses a compact introduction, readable intermediate type sizes, project filtering, image-led case headers and thumbnail-based next-project navigation. V2's five expanded case studies and artifacts are preserved.

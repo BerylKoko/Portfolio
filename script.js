@@ -20,3 +20,17 @@ if (dialog && typeof dialog.showModal === 'function') {
   dialog.addEventListener('click',event=>{if(event.target===dialog) {const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)dialog.close();}});
   dialog.addEventListener('close',()=>trigger?.focus());
 }
+const filters=document.querySelector('.work-filters');
+if(filters){
+  filters.hidden=false;
+  filters.addEventListener('click',event=>{
+    const button=event.target.closest('button[data-filter]');if(!button)return;
+    const selected=button.dataset.filter;let count=0;
+    filters.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
+    document.querySelectorAll('.project-card').forEach(card=>{
+      const show=selected==='all'||card.dataset.category.split(' ').includes(selected);
+      card.hidden=!show;if(show){count++;card.classList.remove('pending');}
+    });
+    document.getElementById('filter-status').textContent=`Showing ${count} ${count===1?'project':'projects'}.`;
+  });
+}
