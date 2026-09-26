@@ -1,0 +1,6 @@
+import {readFile,readdir,stat} from 'node:fs/promises';
+import {resolve,dirname,join} from 'node:path';
+async function walk(dir){const out=[];for(const e of await readdir(dir,{withFileTypes:true})){const p=join(dir,e.name);if(e.isDirectory())out.push(...await walk(p));else out.push(p)}return out;}
+const files=['index.html',...(await walk('work')).filter(p=>p.endsWith('.html'))];let count=0;
+for(const file of files){const html=await readFile(file,'utf8');if(!html.includes('name="viewport"'))throw Error(`Missing viewport: ${file}`);if((html.match(/<h1[ >]/g)||[]).length!==1)throw Error(`Expected one h1: ${file}`);for(const [,attr,url]of html.matchAll(/(href|src)="([^"]+)"/g)){if(!url||/^(https?:|mailto:|#)/.test(url))continue;const [path,hash]=url.split('#');const target=resolve(dirname(file),path);await stat(target).catch(()=>{throw Error(`Broken ${attr}: ${file} -> ${url}`)});if(hash&&target.endsWith('.html')){const text=await readFile(target,'utf8');if(!text.includes(`id="${hash}"`))throw Error(`Missing fragment: ${url}`)}count++;}for(const img of html.matchAll(/<img\b[^>]*>/g))if(!/alt="/.test(img[0]))throw Error(`Missing alt: ${file}`);}
+console.log(`Checked ${files.length} pages and ${count} local references. All passed.`);

@@ -1,38 +1,22 @@
-const hamburger = document.getElementById('hamburgerBtn');
-const navMenu = document.getElementById('navMenu');
-
-hamburger.addEventListener('click', () => {
-  navMenu.classList.toggle('active');
-});
-
-// 3D tilt effect for project cards
-const cards = document.querySelectorAll('.project-card');
-
-cards.forEach(card => {
-  card.addEventListener('mousemove', e => {
-    const rect = card.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-
-    const centerX = rect.width / 2;
-    const centerY = rect.height / 2;
-
-    const rotateX = ((y - centerY) / centerY) * 10;
-    const rotateY = ((centerX - x) / centerX) * 10;
-
-    card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
-    card.style.transition = 'transform 0.1s';
+const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if ('IntersectionObserver' in window && !reduced) {
+  document.documentElement.classList.add('js-reveal');
+  const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+    if (entry.isIntersecting) { entry.target.classList.remove('pending'); observer.unobserve(entry.target); }
+  }), { threshold: 0.06 });
+  document.querySelectorAll('.reveal').forEach(el => {
+    if(el.getBoundingClientRect().top > innerHeight) {el.classList.add('pending'); observer.observe(el);}
   });
-
-  card.addEventListener('mouseleave', () => {
-    card.style.transform = 'rotateX(0deg) rotateY(0deg) scale(1)';
-    card.style.transition = 'transform 0.5s';
-  });
-
-  card.addEventListener('mouseenter', () => {
-    card.style.boxShadow = '0 20px 40px rgba(0,0,0,0.2)';
-  });
-  card.addEventListener('mouseleave', () => {
-    card.style.boxShadow = '0 10px 20px rgba(0,0,0,0.1)';
-  });
-});
+}
+const dialog = document.querySelector('.lightbox');
+let trigger;
+if (dialog && typeof dialog.showModal === 'function') {
+  document.querySelectorAll('.zoom').forEach(link => link.addEventListener('click', event => {
+    event.preventDefault(); trigger=link;
+    const image=dialog.querySelector('img'); image.src=link.href; image.alt=link.querySelector('img').alt;
+    dialog.showModal(); dialog.querySelector('button').focus();
+  }));
+  dialog.querySelector('button').addEventListener('click',()=>dialog.close());
+  dialog.addEventListener('click',event=>{if(event.target===dialog) {const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)dialog.close();}});
+  dialog.addEventListener('close',()=>trigger?.focus());
+}

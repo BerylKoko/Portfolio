@@ -1,0 +1,1 @@
+{"name":"beryl-koko-portfolio","version":"1.0.0","private":true,"scripts":{"build":"node scripts/build.mjs","check":"node scripts/check.mjs","start":"python3 -m http.server 4173","dev":"vite"},"engines":{"node":">=20"},"devDependencies":{"vite":"^7.1.7"}}
