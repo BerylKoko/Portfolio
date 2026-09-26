@@ -44,14 +44,16 @@ Render is optional. Any static host can serve the same build output.
 - [Bookmatch](https://github.com/BerylKoko/Book-Recommendation): book-discovery interface, Flask routes, catalog retrieval, recommendation modules and regression tests. The case study focuses on product decisions, evidence-based matching, metadata handling and the finished interface.
 - [Harvest](https://github.com/BerylKoko/Harvest-Festival): finished pages, responsive behaviour and original sketches. Historical student event guide; not an official current event service.
 
-## Asset credits
+## Current status
 
-Screenshots depict Beryl's actual projects. Research crops and PDFs come from Beryl's supplied documents and retain third-party interface context. Harvest's source credits instructor-provided content and photography. The McQueen opening screenshot includes **Lewis Hamilton 2008 Britain.jpg**, Marc Evans, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/), via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Lewis_Hamilton_2008_Britain.jpg). The screenshot incorporates the original project's crop and overlay. See that repository's `data/SOURCES.md` for the project's full photography provenance.
+The current site is a deployable working version of the portfolio. It contains the five completed projects and their supporting visuals and artifacts.
 
-## Verification
+The next portfolio pass should focus on the case studies themselves: replace summary-style project pages with richer visual walkthroughs that show the actual reasoning, research, analysis, iterations, interfaces, and decisions behind each project. Preserve each project's individual identity rather than forcing the same repeated section structure across all five.
 
-`npm run check` checks every page's viewport, primary heading, image alt attributes, local assets, page links and fragment targets. `npm run build` produces the static output. Visual desktop/mobile QA should be run in a browser before launch; the authoring environment blocked the local browser preview for this content pass. Existing live project interfaces were inspected directly and captured for the case studies.
+In particular, Race Lens should make fuller use of the interface audit, task-based interview protocol, design implications, and prototype iterations; McQueen should preserve the visual/data-story character of the original project; Job Market should foreground actual analysis and findings; Bookmatch should show the product experience and recommendation decisions through the interface; and Harvest can remain a lighter visual/front-end case study.
 
-## Visual foundation
+Avoid defensive or unnecessary provenance commentary in portfolio copy. Keep third-party attribution only where it is genuinely required and in the appropriate source documentation.
 
-The presentation restores the blue V1 from the original Site repository at commit `e6ce8a2`. The recovered stylesheet and homepage source are retained in `design/` for traceability (not included in the production build). V1 supplies the white/navy/royal-blue palette, two-column work grid, image panels, navigation and type family. The current presentation uses a compact introduction, readable intermediate type sizes, project filtering, image-led case headers and thumbnail-based next-project navigation. V2's five expanded case studies and artifacts are preserved.
+The repeated "How I work" block belongs on the homepage, not at the bottom of every case study. Project pages should end with a project-specific conclusion/result and a visually meaningful transition to the next project.
+
+The site is configured for static deployment on Render via `render.yaml`.
