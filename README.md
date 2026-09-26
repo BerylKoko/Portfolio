@@ -34,7 +34,7 @@ Render is optional. Any static host can serve the same build output.
 
 ## Editing
 
-`index.html`, `work/*/index.html`, `site.css`, and `script.js` are the actual site. `scripts/generate.py` holds the page copy and markup generator; after editing it, run `python3 scripts/generate.py`. CSS and browser JavaScript are edited directly. Python is not needed to deploy the committed pages.
+`index.html`, the five `work/*/index.html` files, `site.css`, and `script.js` are the current source of truth for the deployed site. Edit those files directly. `scripts/generate.py` is retained from an earlier generation pass and should not be used to overwrite the hand-edited case studies. Python is not needed to deploy the committed pages.
 
 ## Source of truth
 
