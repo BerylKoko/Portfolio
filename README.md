@@ -6,11 +6,11 @@ The portfolio is being refreshed around five completed projects. Each project re
 
 ## Projects
 
-- [The McQueen Effect](https://github.com/BerylKoko/F1-Analysis) - Lewis Hamilton career data analysis and interactive visual story
+- [The McQueen Effect](https://github.com/BerylKoko/F1-Analysis) - Lewis Hamilton career data analysis and interactive visual story · [Live](https://berylkoko.github.io/F1-Analysis/)
 - [Race Lens](https://github.com/BerylKoko/Race-Lens) - novice-friendly Formula 1 UX research and interactive prototype
 - [Job Market & Skills Analysis](https://github.com/BerylKoko/Job-Market-Skills-Analysis) - Python/SQL analysis of analyst, product, and BI job postings
-- [Bookmatch](https://github.com/BerylKoko/Book-Recommendation) - deployed book-discovery product using Google Books and Open Library
-- [Apple Harvest Festival](https://github.com/BerylKoko/Harvest-Festival) - responsive event website
+- [Bookmatch](https://github.com/BerylKoko/Book-Recommendation) - deployed book-discovery product using Google Books and Open Library · [Live](https://book-recommendation-1-e4km.onrender.com/)
+- [Apple Harvest Festival](https://github.com/BerylKoko/Harvest-Festival) - responsive event website · [Live](https://berylkoko.github.io/Harvest-Festival/)
 
 ## Portfolio direction
 
