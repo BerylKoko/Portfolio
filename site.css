@@ -47,3 +47,110 @@ body{background:#fbfcff}
 .case .visual-pair{border-top:0;padding-top:14px;padding-bottom:34px}.case .visual-pair h2{color:var(--case-deep)}.case .artifact-links a{color:var(--case-accent);font-weight:600}.case .next-card{background:var(--case-soft);border-color:color-mix(in srgb,var(--case-accent) 20%,#dfe5ef)}.case .next-card:hover{border-color:var(--case-accent)}
 @media(max-width:900px){.insight-grid.four{grid-template-columns:1fr 1fr}.feature-band{grid-template-columns:1fr}.mapping-list>div{grid-template-columns:130px 1fr}.mapping-list>div p{grid-column:2}.flow-strip{grid-template-columns:1fr}.flow-strip i{display:none}.logic-grid.three{grid-template-columns:1fr 1fr}.schema-flow{grid-template-columns:1fr}.schema-flow i{transform:rotate(90deg);justify-self:center}}
 @media(max-width:640px){.hero{box-shadow:0 0 0 100vmax #102b59}.chapter{grid-template-columns:1fr;gap:10px;padding:26px 0}.chapter-dek{font-size:17px!important}.insight-grid,.insight-grid.four{grid-template-columns:1fr}.feature-band{padding:23px;margin:22px 0 30px}.task-grid,.logic-grid,.logic-grid.three{grid-template-columns:1fr}.mapping-list>div{grid-template-columns:1fr;gap:6px}.mapping-list>div p{grid-column:auto}.timeline{grid-template-columns:1fr}.metric-grid{grid-template-columns:1fr 1fr}.metric-grid>div:nth-child(2){border-right:0}.result-panel{grid-template-columns:1fr;padding:22px}.data-table .row,.data-table.dark .row{grid-template-columns:1.4fr .8fr .5fr;gap:8px;font-size:12px}.data-table.dark .row{grid-template-columns:1.5fr .6fr .6fr .8fr}.pull-quote{padding:26px 22px}.pull-quote p{font-size:19px!important}.artifact-pair{padding:12px}}
+
+
+
+/* Editorial × Racing redesign (preview branch only). The case-study
+   content, figures, links and research evidence remain unchanged. */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600;700&display=swap');
+body.case{font-family:'DM Sans',Arial,sans-serif;background:#f3f0e8;color:#1c2721;--border:#c9c7bd;--case-text:#1e2924;--case-surface:#f1eee5;--case-muted:#526159}
+body.case .shell{width:min(1250px,89%)}
+body.case .site-header{height:88px;border-bottom:1px solid #9a9e9369;background:transparent}
+body.case .wordmark{font:600 38px/1 'Cormorant Garamond',Georgia,serif;letter-spacing:-.05em}
+body.case .wordmark span{color:#a54235}
+body.case .site-header nav{gap:clamp(14px,2.9vw,36px)}
+body.case .site-header nav a{font-size:11px;font-weight:700;letter-spacing:.11em;text-transform:uppercase}
+body.case .site-header nav a:hover{color:#a54235}
+body.case .case-heading{background:var(--case-surface);color:var(--case-text);box-shadow:0 0 0 100vmax var(--case-surface);clip-path:inset(0 -100vmax);padding-top:40px;padding-bottom:65px}
+body.case .case-heading .back,body.case .case-heading .eyebrow,body.case .case-heading .text-link{color:#a24538}
+body.case .case-heading .eyebrow{font-size:11px;letter-spacing:.13em;text-transform:uppercase;font-weight:700}
+body.case .case-heading h1{font:500 clamp(62px,7.8vw,115px)/.89 'Cormorant Garamond',Georgia,serif;letter-spacing:-.055em;color:var(--case-text);margin:22px 0 24px}
+body.case .case-heading .case-dek{font-size:16px;line-height:1.75;max-width:540px;color:var(--case-muted)}
+body.case .case-heading .button{background:#21362e;border:1px solid #21362e;color:#fff;padding:14px 23px;text-transform:uppercase;letter-spacing:.08em;font-size:11px;font-weight:700}
+body.case .case-heading .text-link{text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:4px;font-size:12px;font-weight:700}
+body.case .case-preview{border:8px solid #ffffff6e;box-shadow:0 22px 50px #17251d26;overflow:hidden;border-radius:3px}
+body.case .case-preview img{object-fit:cover;object-position:top}
+body.case .case-body{padding-top:60px;padding-bottom:50px}
+body.case .case-body h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(30px,3.2vw,49px);font-weight:500;letter-spacing:-.025em;line-height:1.07;color:#21332a}
+body.case .case-body h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;letter-spacing:-.02em}
+body.case .case-body p{line-height:1.85}
+body.case .chapter{border-color:#c8c8bf;grid-template-columns:160px 1fr}
+body.case .chapter .section-label,body.case .case-body .section-label{color:#9e4535;font-size:11px;letter-spacing:.10em;text-transform:uppercase;font-weight:700}
+body.case .chapter-dek{color:#4d5a50!important}
+body.case .feature-band{border-radius:2px}
+body.case .feature-band h2,body.case .feature-band h3{color:#fff}
+body.case .feature-band p{color:#dbe4df}
+body.case .insight-grid article{border-radius:2px}
+body.case .metric-grid{border-radius:2px}
+body.case .case-body figure img{border-radius:2px}
+body.case .next-card{border-radius:2px}
+
+/* Bookmatch: warm reading-room art direction. */
+body.case.bookmatch{--case-surface:#f0ece2;--case-text:#233529;--case-muted:#596b5c;--case-accent:#60775c;--case-deep:#20362c;--case-soft:#e8eade}
+body.case.bookmatch .case-preview{background:#dbdfd1;border-color:#e0d9c8}
+body.case.bookmatch .case-heading .button{background:#20382c}
+body.case.bookmatch .feature-band{background:#21382b}
+body.case.bookmatch .flow-strip{background:#e8ebdf}
+body.case.bookmatch .insight-grid article{background:#e8eadd;border-color:#b9c4b3}
+
+/* The McQueen Effect: cinematic black-and-rust race storytelling. */
+body.case.mcqueen{--case-surface:#111817;--case-text:#f8f3e7;--case-muted:#c7cfc9;--case-accent:#d45242;--case-deep:#101817;--case-soft:#212c29;--border:#40504a;background:#141b19;color:#ebeee7}
+body.case.mcqueen .site-header{color:#f5f2ea;border-color:#52615c73}
+body.case.mcqueen .site-header nav a{color:#dce4df}
+body.case.mcqueen .case-heading{background-image:linear-gradient(90deg,#111817 0%,#111817e8 45%,#111817a8 73%,#111817 100%),url('assets/mcqueen-hero-new.jpg');background-size:cover;background-position:center 43%;box-shadow:0 0 0 100vmax #111817}
+body.case.mcqueen .case-heading .back,body.case.mcqueen .case-heading .eyebrow,body.case.mcqueen .case-heading .text-link{color:#e67b67}
+body.case.mcqueen .case-heading .case-dek{color:#dce4de}
+body.case.mcqueen .case-heading .button{background:#a8382e;border-color:#a8382e}
+body.case.mcqueen .case-preview{border-color:#ffffff23;box-shadow:0 20px 50px #0009}
+body.case.mcqueen .case-body h2,body.case.mcqueen .case-body h3,body.case.mcqueen .case-body strong{color:#f2f2e9}
+body.case.mcqueen .case-body p,body.case.mcqueen .case-body li{color:#c5cec7}
+body.case.mcqueen .case-body .chapter-dek{color:#c5cec7!important}
+body.case.mcqueen .chapter,body.case.mcqueen .visual-pair{border-color:#57625b}
+body.case.mcqueen .chapter .section-label,body.case.mcqueen .case-body .section-label{color:#e87965}
+body.case.mcqueen .case-body figure{background:transparent}
+body.case.mcqueen .case-body figcaption{color:#adb9b1}
+body.case.mcqueen .metric-grid{background:#222e29}
+body.case.mcqueen .insight-grid article,body.case.mcqueen .timeline>div{background:#242e2b;border-color:#475950}
+body.case.mcqueen .insight-grid article h3,body.case.mcqueen .insight-grid article p{color:#eee}
+body.case.mcqueen .feature-band{background:#202b27}
+body.case.mcqueen .result-panel{background:#23312a;color:#f1f0e8}
+body.case.mcqueen .result-panel h2,body.case.mcqueen .result-panel p{color:#f4f0e8}
+body.case.mcqueen .data-table{border-color:#66736a}
+body.case.mcqueen .data-table .row{border-color:#566159}
+body.case.mcqueen .data-table .head{color:#aebeb3}
+body.case.mcqueen .data-table strong{color:#f5f3e9}
+body.case.mcqueen .pull-quote{background:#212c27;border-color:#d85d4a}
+body.case.mcqueen .site-footer{border-color:#52615c;color:#e0e8e2}
+body.case.mcqueen .site-footer a{color:#f3f0e8}
+
+/* Race Lens: steel, research blue, functional clarity. */
+body.case.race-lens{--case-surface:#e7ebe9;--case-text:#233534;--case-muted:#526766;--case-accent:#315a64;--case-deep:#1a363a;--case-soft:#e1e9e9}
+body.case.race-lens .case-heading .button{background:#234b54}
+body.case.race-lens .insight-grid article{background:#e5ebeb;border-color:#c5d4d3}
+
+/* Job market: understated data-journal look. */
+body.case.job-market{--case-surface:#eaeade;--case-text:#273026;--case-muted:#60685b;--case-accent:#827745;--case-deep:#2a372c;--case-soft:#e7e8da}
+body.case.job-market .case-heading .button{background:#304332}
+
+/* Harvest: warm and restrained autumn editorial. */
+body.case.harvest{--case-surface:#f2e8dd;--case-text:#51392d;--case-muted:#725c4e;--case-accent:#a25a3e;--case-deep:#4a3026;--case-soft:#f0e2d5}
+body.case.harvest .case-heading .button{background:#78432d}
+
+@media(max-width:800px){
+ body.case .site-header{height:78px}
+ body.case .wordmark{font-size:32px}
+ body.case .site-header nav{gap:13px}
+ body.case .site-header nav a{font-size:10px}
+ body.case .case-heading{padding-top:31px;padding-bottom:38px}
+ body.case .case-heading h1{font-size:clamp(57px,12vw,85px)}
+ body.case .case-heading .case-dek{font-size:15px}
+ body.case .case-body{padding-top:38px}
+ body.case .case-body h2{font-size:clamp(30px,6vw,44px)}
+ body.case .chapter{grid-template-columns:1fr}
+}
+@media(max-width:440px){
+ body.case .site-header nav a:nth-child(2){display:none}
+ body.case .case-heading h1{font-size:clamp(51px,13vw,67px)}
+ body.case .case-preview{border-width:5px}
+ body.case .case-body{padding-top:23px}
+}
