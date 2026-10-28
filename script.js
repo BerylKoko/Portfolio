@@ -34,3 +34,19 @@ if(filters){
     document.getElementById('filter-status').textContent=`Showing ${count} ${count===1?'project':'projects'}.`;
   });
 }
+
+
+// Publicly hosted editorial photographs have local project-image fallbacks.
+// This avoids empty cards if a photo host is temporarily unavailable.
+document.querySelectorAll('img[data-fallback]').forEach(img => {
+  img.addEventListener('error', () => {
+    const fallback = img.dataset.fallback;
+    if (fallback && !img.dataset.didFallback) {
+      img.dataset.didFallback = 'true';
+      img.src = fallback;
+    }
+  });
+  if (img.complete && img.naturalWidth === 0) {
+    img.dispatchEvent(new Event('error'));
+  }
+});
