@@ -155,3 +155,72 @@ body.case.harvest .case-heading .button{background:#78432d}
  body.case .case-preview{border-width:5px}
  body.case .case-body{padding-top:23px}
 }
+
+
+/* Editorial image and typography refinement, October 2026 */
+body.case .site-header nav a{font-size:13px;letter-spacing:0;text-transform:none;font-weight:500}
+body.case .wordmark{font-size:41px}
+body.case .case-heading .eyebrow,body.case .case-heading .back{font-size:12px;text-transform:none;letter-spacing:0;font-weight:500}
+body.case .case-heading h1{font-weight:500}
+body.case .case-heading .case-dek{font-size:16px}
+body.case .case-heading .button{font-size:12px;font-weight:600;letter-spacing:0;text-transform:none}
+body.case .chapter .section-label,body.case .case-body .section-label{font-size:12px;letter-spacing:0;text-transform:none;font-weight:500}
+body.case .band-kicker,body.case .insight-grid article span{font-size:12px!important;letter-spacing:0;text-transform:none;font-weight:500}
+body.case .case-body h2{letter-spacing:-.04em}
+body.case .case-body p{font-family:'DM Sans',Arial,sans-serif}
+body.case .site-header nav a:hover{color:#af513e}
+body.case .case-body figure a.zoom{cursor:zoom-in}
+body.case .case-body figure img{display:block}
+body.case .site-footer{font-family:'DM Sans',Arial,sans-serif}
+body.case .site-footer a{font-weight:500}
+body.case.bookmatch{background:#f5f0e7}
+body.case.bookmatch .case-heading{background:#f6f1e8;box-shadow:0 0 0 100vmax #f6f1e8}
+body.case.bookmatch .case-heading h1{font-size:clamp(77px,8.7vw,124px)}
+body.case.bookmatch .case-heading .case-dek{color:#4e6156}
+body.case.bookmatch .case-preview{border:9px solid #282c29;background:#edece7;box-shadow:0 19px 30px #1d2b2528}
+body.case.bookmatch .case-heading .text-link{color:#3d5d4a}
+body.case.bookmatch .case-body figure{background:#ebe6dc}
+body.case.bookmatch .case-body figure figcaption{padding:3px 0}
+body.case.bookmatch .feature-band{background:#23372c}
+body.case.bookmatch .metric-grid{background:#2a4033}
+.bookmatch-feature-strip{width:min(1250px,89%);margin:0 auto;padding:25px 0 35px;border-bottom:1px solid #c6c5b9;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.bookmatch-feature-strip div{background:#ebe5db;border:1px solid #dcd6c9;padding:16px 20px;min-height:102px}
+.bookmatch-feature-strip strong{display:block;font:600 23px/1.1 'Cormorant Garamond',Georgia,serif;color:#293d30;margin-bottom:5px}
+.bookmatch-feature-strip span{font-size:12px;line-height:1.5;color:#5b695d}
+body.case.mcqueen{background:#101514}
+body.case.mcqueen .case-heading{background:#121715!important;box-shadow:0 0 0 100vmax #121715!important;overflow:hidden}
+body.case.mcqueen .case-heading::before{content:"";position:absolute;inset:-30% -20%;pointer-events:none;background:radial-gradient(ellipse at 80% 45%,#58181350,transparent 36%);z-index:-1}
+body.case.mcqueen .case-heading h1{font-size:clamp(68px,8vw,117px);line-height:.91;max-width:640px}
+body.case.mcqueen .case-heading .case-dek{max-width:510px;color:#b9c5bb}
+body.case.mcqueen .mcqueen-editorial-intro{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:clamp(30px,5vw,70px);position:relative}
+body.case.mcqueen .case-heading .button{background:#a23b32;border-color:#a23b32}
+body.case.mcqueen .mcqueen-portrait{position:relative;display:block;width:100%;height:460px;background:radial-gradient(circle at 58% 22%,#6a2d29,#0b0d0d 70%);border:1px solid #54322b;overflow:hidden;text-decoration:none;box-shadow:0 25px 70px #0006}
+body.case.mcqueen .mcqueen-portrait img{width:100%;height:100%;display:block;object-fit:cover;object-position:center 35%;filter:grayscale(1) brightness(.62) contrast(1.3)}
+body.case.mcqueen .mcqueen-portrait:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(0deg,#090c0c 0%,#090a0a18 35%,#53201842 100%),linear-gradient(90deg,transparent,#6b171e22)}
+body.case.mcqueen .portrait-number{position:absolute;right:15px;bottom:14px;color:#e8544e;font:600 138px/.8 'Cormorant Garamond',Georgia,serif;letter-spacing:-.1em;z-index:1;opacity:.95}
+body.case.mcqueen .portrait-credit{position:absolute;bottom:18px;left:20px;right:165px;z-index:1;color:#e2dfd6;font-size:11px;line-height:1.4}
+body.case.mcqueen .case-body{background:#101514}
+body.case.mcqueen .case-body .metric-grid{background:#171e1b;border:1px solid #44514a}
+body.case.mcqueen .case-body figure{background:#161d1a}
+body.case.mcqueen .case-body figcaption{color:#acb9af}
+body.case.mcqueen .chapter-dek{color:#c7d0c8!important}
+body.case.mcqueen .case-body .feature-band{background:#1d2924}
+body.case.mcqueen .next-card{background:#202c26;border-color:#424e47}
+body.case.mcqueen .next-card h3{color:#fff}
+body.case.mcqueen .site-footer{color:#d0d7d0}
+@media(max-width:850px){
+ body.case.mcqueen .mcqueen-editorial-intro{grid-template-columns:1fr;gap:25px}
+ body.case.mcqueen .mcqueen-portrait{height:370px}
+ body.case.mcqueen .case-heading h1{font-size:clamp(57px,9vw,85px)}
+ .bookmatch-feature-strip{gap:9px}
+}
+@media(max-width:550px){
+ body.case .wordmark{font-size:34px}
+ body.case .site-header nav a{font-size:12px}
+ .bookmatch-feature-strip{grid-template-columns:1fr;padding:17px 0;gap:8px}
+ .bookmatch-feature-strip div{min-height:0;padding:12px 15px}
+ .bookmatch-feature-strip strong{font-size:21px;margin-bottom:2px}
+ body.case.mcqueen .mcqueen-portrait{height:320px}
+ body.case.mcqueen .portrait-number{font-size:96px}
+ body.case.mcqueen .portrait-credit{right:120px}
+}
