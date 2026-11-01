@@ -200,3 +200,172 @@ body.case.mcqueen .next-project .next-card h3{color:#f8f0e8}
 body.case.mcqueen .next-project .next-card p{color:#c8d1c8}
 body.case.mcqueen .next-project .next-card .eyebrow,
 body.case.mcqueen .next-project .next-card .card-cta{color:#eea493}
+
+
+/* Homepage and case-study navigation reset — November 1 visual review.
+   One clear résumé action, custom serif wordmark and nav, no bottom hero stats. */
+.masthead.wrap{
+  width:min(1480px,calc(100% - 7vw));
+  min-height:102px;
+  padding:12px 0;
+  border-bottom:1px solid #bdb8ad;
+  align-items:center;
+  gap:48px;
+}
+.masthead .logo{
+  font:600 clamp(37px,3.5vw,55px)/1 'Cormorant Garamond',Georgia,serif;
+  letter-spacing:-.055em;
+  color:#182720;
+  white-space:nowrap;
+  text-decoration:none;
+}
+.masthead .logo span{color:#a04637}
+.masthead nav{
+  display:flex;
+  align-items:center;
+  gap:clamp(24px,3.1vw,54px);
+}
+.masthead nav a:not(.resume-link){
+  font:600 22px/1.2 'Cormorant Garamond',Georgia,serif;
+  letter-spacing:-.015em;
+  color:#24342b;
+  text-transform:none;
+  text-decoration:none;
+  padding:9px 0;
+  border-bottom:2px solid transparent;
+  transition:border-color .2s,color .2s;
+}
+.masthead nav a:not(.resume-link):hover,
+.masthead nav a:not(.resume-link):focus-visible{color:#9e4335;border-bottom-color:#9e4335}
+.masthead nav a.resume-link{
+  display:inline-flex;
+  align-items:center;
+  gap:18px;
+  background:#192c26;
+  color:#fff!important;
+  padding:15px 21px;
+  border:1px solid #192c26;
+  font:500 15px/1.35 'DM Sans',Arial,sans-serif;
+  letter-spacing:0;
+  text-transform:none;
+  white-space:nowrap;
+  text-decoration:none;
+}
+.masthead nav a.resume-link:hover{background:#364c40;border-color:#364c40;color:#fff!important}
+
+/* Let the hero breathe. The lower three-column summary was redundant. */
+.hero{min-height:720px}
+.hero-inner{
+  min-height:720px;
+  padding-top:65px;
+  padding-bottom:90px;
+  justify-content:center;
+}
+.hero-copy{width:min(57%,720px)}
+.hero-copy .hero-affiliation{font-size:17px;line-height:1.4;margin-bottom:28px}
+.hero-desc{font-size:17px;line-height:1.7;max-width:510px;margin-bottom:27px}
+.hero .actions{margin-top:28px;gap:0}
+.hero .actions .btn{
+  display:inline-flex;
+  width:auto;
+  min-width:0;
+  padding:14px 21px;
+  gap:32px;
+  font:500 15px/1.4 'DM Sans',Arial,sans-serif;
+  letter-spacing:0;
+  text-transform:none;
+  box-shadow:none;
+}
+.hero .actions .btn span{font-size:19px}
+.hero-bottom{display:none!important}
+.project-card.harvest .card-visual img{object-fit:cover;object-position:center center}
+
+/* The same distinctive navigation carries into every case study. */
+body.case .site-header.shell{
+  width:min(1480px,calc(100% - 7vw));
+  min-height:102px;
+  height:auto;
+  padding:13px 0;
+  align-items:center;
+  gap:48px;
+}
+body.case .site-header .wordmark{
+  font:600 clamp(37px,3.5vw,55px)/1 'Cormorant Garamond',Georgia,serif;
+  letter-spacing:-.055em;
+  text-decoration:none;
+  white-space:nowrap;
+}
+body.case .site-header nav{display:flex;align-items:center;gap:clamp(24px,3.1vw,54px)}
+body.case .site-header nav a:not(.case-resume-link){
+  font:600 22px/1.2 'Cormorant Garamond',Georgia,serif!important;
+  letter-spacing:-.015em!important;
+  text-transform:none!important;
+  padding:9px 0;
+  text-decoration:none;
+  border-bottom:2px solid transparent;
+  color:inherit;
+}
+body.case .site-header nav a:not(.case-resume-link):hover{
+  border-bottom-color:#a34838;
+  color:#a34838;
+}
+body.case .site-header nav a.case-resume-link{
+  display:inline-flex;
+  align-items:center;
+  gap:18px;
+  padding:15px 21px;
+  background:#192c26;
+  color:#fff!important;
+  border:1px solid #192c26;
+  font:500 15px/1.35 'DM Sans',Arial,sans-serif!important;
+  letter-spacing:0!important;
+  text-transform:none!important;
+  text-decoration:none;
+  white-space:nowrap;
+}
+body.case .site-header nav a.case-resume-link:hover{background:#344b3f;color:#fff!important}
+body.case.mcqueen .site-header nav a.case-resume-link{
+  background:#a34037;
+  border-color:#a34037;
+  color:#fff!important;
+}
+body.case.mcqueen .site-header nav a.case-resume-link:hover{background:#bb5447;border-color:#bb5447}
+body.case.mcqueen .site-header nav a:not(.case-resume-link){color:#f0ebe1}
+
+/* The actual Harvest project banner, not a third-party stock substitute. */
+body.case.harvest .case-heading.harvest-photo-hero{
+  background:linear-gradient(90deg,#2c1b17e5 0%,#4b2414a8 50%,#2f18132f 100%),
+    url('https://raw.githubusercontent.com/BerylKoko/Harvest-Festival/main/images/banner.jpg') center 52%/cover!important;
+}
+
+@media(max-width:900px){
+ .masthead.wrap,body.case .site-header.shell{width:calc(100% - 42px);gap:22px}
+ .masthead nav,body.case .site-header nav{gap:19px}
+ .masthead nav a:not(.resume-link),body.case .site-header nav a:not(.case-resume-link){font-size:19px!important}
+ .hero-inner{min-height:650px}
+ .hero{min-height:650px}
+ .hero-copy{width:65%}
+}
+@media(max-width:760px){
+ .masthead.wrap,body.case .site-header.shell{
+   min-height:0;
+   padding:20px 0 16px;
+   flex-wrap:wrap;
+   row-gap:14px;
+ }
+ .masthead .logo,body.case .site-header .wordmark{font-size:39px}
+ .masthead nav,body.case .site-header nav{width:100%;justify-content:space-between;gap:12px;flex-wrap:wrap}
+ .masthead nav a:not(.resume-link),body.case .site-header nav a:not(.case-resume-link){font-size:19px!important}
+ .masthead nav a.resume-link,body.case .site-header nav a.case-resume-link{font-size:14px!important;padding:10px 13px;gap:7px}
+ .hero{min-height:0}
+ .hero-inner{min-height:0;padding:47px 0 55px}
+ .hero-copy{width:100%}
+ .hero-copy .hero-affiliation{font-size:15px}
+ .hero .actions .btn{padding:13px 19px;font-size:15px}
+}
+@media(max-width:480px){
+ .masthead.wrap,body.case .site-header.shell{width:calc(100% - 34px)}
+ .masthead nav a:not(.resume-link),body.case .site-header nav a:not(.case-resume-link){font-size:18px!important}
+ .masthead .logo,body.case .site-header .wordmark{font-size:36px}
+ .masthead nav a.resume-link,body.case .site-header nav a.case-resume-link{padding:9px 12px}
+}
