@@ -488,3 +488,15 @@ body.case .case-footer-bottom a:last-child{border:1px solid #97a090;padding:12px
  body.case .case-footer-actions .case-footer-primary{grid-column:auto}
  body.case .case-footer-bottom a:last-child{margin-left:auto}
 }
+
+
+/* Contrast corrections for light case-study covers. */
+body.case.bookmatch .bookmatch-opening h1{color:#1b2d23}
+body.case.bookmatch .bookmatch-hero .back{color:#42594a}
+body.case.bookmatch .bookmatch-opening .text-link{color:#315644}
+body.case.job-market .market-report-title h1{color:#22362a}
+body.case.job-market .market-report-hero .back{color:#3d5648}
+body.case.job-market .market-report-title .text-link{color:#2c5849}
+body.case.bookmatch .bookmatch-opening .case-dek{color:#4d5a4e}
+body.case.job-market .market-report-title .case-dek{color:#47584a}
+body.case .case-footer-actions .case-footer-primary{color:#fffdf3}
