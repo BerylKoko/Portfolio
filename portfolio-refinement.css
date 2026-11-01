@@ -160,3 +160,43 @@ body.case.mcqueen .case-photo-credit{border-color:#d7ccbc}
  body.case .case-footer-actions{gap:15px}
  body.case .case-footer-bottom{flex-wrap:wrap}
 }
+
+
+/* Small-type sweep: no remaining decorative 9–13px labels in visible case-study UI. */
+body.case .artifact-links,body.case .artifact-links a,
+body.case .schema-flow span,body.case .schema-flow b,
+body.case .flow-strip b,body.case .flow-strip span,
+body.case .logic-grid b,body.case .logic-grid p,
+body.case .task-grid b,body.case .task-grid span,
+body.case .scope-note,body.case .pull-quote cite,
+body.case .stat-strip span,body.case .pipeline b,
+body.case .data-table .head,body.case .data-table .row,
+body.case .case-facts span,body.case .case-facts p,
+body.case .result-points span,body.case .page-map span,
+body.case .next-header>a,body.case .next-card .card-cta,
+body.case .next-card .eyebrow,body.case .case-photo-credit summary,
+body.case .case-photo-credit p,body.case .case-photo-credit a{
+  font-size:16px!important;letter-spacing:0!important;text-transform:none!important;line-height:1.6
+}
+body.case .bookmatch-feature-strip span{font-size:16px!important}
+body.case .metric-grid span,body.case .insight-grid article span{font-size:16px!important}
+.campus-photo figcaption{font-size:15px;padding:9px 12px;letter-spacing:0}
+.campus-photo figcaption a{font-size:15px}
+body.case .next-project{padding:30px 0 35px;margin:35px auto 45px;border-top:1px solid #c9c0b4}
+body.case .next-project .next-header{display:flex;align-items:center;justify-content:space-between;gap:22px;margin-bottom:15px}
+body.case .next-project .next-header h2{font:500 28px/1.2 'Cormorant Garamond',Georgia,serif;letter-spacing:-.02em;margin:0}
+body.case .next-project .next-card{display:block;padding:23px 28px;border:1px solid #d1c7ba;background:#f0e9dd;text-decoration:none;max-width:800px;transition:border-color .2s}
+body.case .next-project .next-card:hover{border-color:#ab654f}
+body.case .next-project .next-card>div{padding:0;display:block}
+body.case .next-project .next-card .eyebrow{font-size:16px!important;margin:0 0 5px;color:#8a4f3c}
+body.case .next-project .next-card h3{font:500 clamp(30px,3vw,40px)/1.08 'Cormorant Garamond',Georgia,serif;letter-spacing:-.02em;margin:0 0 12px;color:#1d2f25}
+body.case .next-project .next-card p{font-size:16px!important;line-height:1.6;max-width:600px;margin:0 0 16px;color:#435448}
+body.case .next-project .next-card .card-cta{color:#9e4635;text-decoration:underline;text-underline-offset:4px;font-size:16px!important}
+body.case.mcqueen .next-project{border-color:#59645b}
+body.case.mcqueen .next-project .next-header h2{color:#f6f0e6}
+body.case.mcqueen .next-project .next-card{background:#1d2420;border-color:#5c685f}
+body.case.mcqueen .next-project .next-card:hover{border-color:#a05f50}
+body.case.mcqueen .next-project .next-card h3{color:#f8f0e8}
+body.case.mcqueen .next-project .next-card p{color:#c8d1c8}
+body.case.mcqueen .next-project .next-card .eyebrow,
+body.case.mcqueen .next-project .next-card .card-cta{color:#eea493}
