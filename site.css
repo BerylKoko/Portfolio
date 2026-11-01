@@ -505,3 +505,20 @@ body.case .case-photo-credit{border-top:1px solid #c6bfaf;padding-top:15px;paddi
 body.case .case-photo-credit summary{font-size:15px;color:#4a5b4c;cursor:pointer;padding:10px 0;max-width:max-content}
 body.case .case-photo-credit p,body.case .case-photo-credit a{font-size:15px;line-height:1.65;color:#536150}
 body.case .case-photo-credit p{max-width:880px;margin:13px 0 7px}
+
+
+/* Race Lens shares the portfolio's warm palette; interface contrast carries the technical tone. */
+body.case.race-lens{background:#f3f0e8;--case-surface:#f3f0e8;--case-soft:#eee7dd;--case-accent:#a6493b}
+body.case.race-lens .case-heading.research-hero{background:#f1ebe2!important;color:#1f2b25}
+body.case.race-lens .research-intro h1{color:#202b25}
+body.case.race-lens .research-intro .case-dek{color:#525b52}
+body.case.race-lens .research-intro-aside>p{color:#566057}
+body.case.race-lens .research-intro-aside .button{background:#26362f;border-color:#26362f}
+body.case.race-lens .research-intro-aside .text-link{color:#9f4538}
+body.case.race-lens .race-prototype-frame{border-color:#504e48}
+body.case.race-lens .race-window-bar a{color:#e8a797}
+body.case.race-lens .race-research-pillars{border-color:#c3b7ab}
+body.case.race-lens .race-research-pillars span{color:#71453b;border-color:#c3b7ab}
+body.case.race-lens .case-body .chapter h2,body.case.race-lens .case-body .visual-pair h2{color:#292f2a}
+body.case.race-lens .case-body .insight-grid article{background:#ede8e0;border-color:#cfc6b9}
+body.case.race-lens .case-body .feature-band{background:#292d29}
