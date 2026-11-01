@@ -108,7 +108,7 @@ body.case.job-market .case-body .visual-pair figure img{max-height:500px;padding
 body.case.job-market .case-body .feature-band h2{font-size:clamp(27px,2.5vw,37px)}
 
 /* Harvest shows the editorial cover once, the built site once, and the responsive details after. */
-body.case.harvest .case-heading.harvest-photo-hero{background:linear-gradient(90deg,#302018c9 0%,#4d2c1b90 52%,#33201655 100%),url('https://images.pexels.com/photos/10112733/pexels-photo-10112733.jpeg?auto=compress&cs=tinysrgb&w=1800') center 44%/cover!important;min-height:550px}
+body.case.harvest .case-heading.harvest-photo-hero{background:linear-gradient(90deg,#302018c9 0%,#4d2c1b90 52%,#33201655 100%),url('https://raw.githubusercontent.com/BerylKoko/Harvest-Festival/main/images/banner.jpg') center 44%/cover!important;min-height:550px}
 body.case.harvest .harvest-opening{margin:70px 0 25px}
 body.case.harvest .harvest-opening h1{font-size:clamp(67px,7.3vw,107px);line-height:.9}
 body.case.harvest .harvest-opening .case-dek{font-size:18px;max-width:540px}
