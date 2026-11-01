@@ -274,3 +274,81 @@ a{color:inherit}a:focus-visible,button:focus-visible{outline:3px solid #bc5b43;o
  .project-card .card-meta .side-arrow{font-size:24px}
  .project-card.job-market .card-visual{padding:14px}
 }
+
+
+/* November portfolio-wide typography + contact redesign */
+.hero-affiliation{margin:0 0 30px;color:#9f382e;font:500 clamp(16px,1.28vw,19px)/1.5 'DM Sans',Arial,sans-serif;letter-spacing:0;text-transform:none}
+.hero-affiliation span{color:#aa8d7c;padding:0 .25em}
+.hero-copy .kicker{font-size:16px;letter-spacing:0;text-transform:none}
+.masthead nav a{font-size:15px;font-weight:500;letter-spacing:0;text-transform:none}
+.masthead .resume-link{font-size:14px;padding:16px 22px}
+.hero-desc{font-size:17px;line-height:1.75}
+.btn{font-size:15px;font-weight:500;letter-spacing:0;text-transform:none;padding:16px 22px}
+.micro,.eyebrow,.kicker,.section-index{font:500 16px/1.5 'DM Sans',Arial,sans-serif;letter-spacing:0;text-transform:none}
+.hero-bottom .small,.hero-bottom .small strong,.hero-areas{font-size:15px;line-height:1.6}
+.hero-bottom .micro{font-size:15px}
+.hero-bottom{width:min(550px,55%)}
+.work-section .section-intro p:not(.eyebrow){font-size:18px;line-height:1.65}
+.project-card .card-meta p{font-size:16px}
+.project-card.job-market .card-visual{padding:0;background:#171e1c;display:block}
+.project-card.job-market .card-visual img{width:100%;height:100%;object-fit:cover;background:transparent;border:0;box-shadow:none}
+.project-card.race-lens .card-visual img{object-position:center 52%}
+.project-card.harvest .card-visual img{object-position:center center}
+.note-strip{display:flex;align-items:center;gap:24px;margin-top:36px;border-top:1px solid #67746c5d;padding:27px 0 0}
+.note-strip p{font-size:16px;line-height:1.65;color:#c6cdc5;margin:0}
+.note-strip a.note-button{border:1px solid #a6b6ab;color:#f4f0e7;background:#253630;padding:14px 20px;font-size:15px;font-weight:500;display:inline-flex;align-items:center;justify-content:space-between;gap:30px;white-space:nowrap;transition:background .2s}
+.note-strip a.note-button:hover{background:#3b4d43}
+.contact-editorial{background:#f1eae0;color:#18221e;border-top:1px solid #d6d0c5;padding:92px 0 85px}
+.contact-editorial-grid{display:grid;grid-template-columns:1fr 1.05fr;align-items:end;gap:7vw}
+.contact-message h2{font:500 clamp(70px,8vw,122px)/.86 'Cormorant Garamond',Georgia,serif;letter-spacing:-.057em;margin:0 0 27px}
+.contact-message p{font-size:18px;line-height:1.75;color:#515950;max-width:510px;margin:0}
+.contact-actions{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.contact-actions a{padding:21px 24px;font:500 16px/1.35 'DM Sans',Arial,sans-serif;text-decoration:none;display:flex;justify-content:space-between;align-items:center;gap:20px;transition:transform .18s,background .18s;border:1px solid #2e3a33}
+.contact-actions a:hover{transform:translateY(-2px)}
+.contact-actions .contact-action-primary{grid-column:1 / -1;background:#182820;color:#f6f1e8;min-height:80px}
+.contact-actions .contact-action-primary:hover{background:#304539}
+.contact-actions .contact-action-secondary{color:#182820;background:transparent}
+.contact-actions .contact-action-secondary:hover{background:#e0d8cb}
+.editorial-footer{background:#eae2d6;color:#223027;border-top:1px solid #c9c1b3;padding:30px 0 28px}
+.editorial-footer-main{display:flex;align-items:center;justify-content:space-between;gap:26px}
+.editorial-footer-main .footer-wordmark{font:600 42px/1 'Cormorant Garamond',Georgia,serif;text-decoration:none;letter-spacing:-.045em;color:#1a2821}
+.footer-wordmark span{color:#9e4435}
+.editorial-footer-main p{font-size:15px;line-height:1.5;margin:0;color:#3e4941}
+.editorial-footer-main .footer-resume{border:1px solid #798579;text-decoration:none;padding:13px 18px;font-size:15px;font-weight:500;color:#213327;display:flex;align-items:center;gap:25px}
+.editorial-footer-main .footer-resume:hover{background:#d6cdbc}
+.image-credits{margin-top:26px;border-top:1px solid #c9c1b3;padding-top:16px}
+.image-credits summary{font-size:14px;color:#586257;cursor:pointer;max-width:max-content;padding:8px 0}
+.image-credits .credit-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px 22px;padding:18px 0}
+.image-credits .credit-links a{color:#34483b;font-size:14px;line-height:1.6;text-underline-offset:3px}
+.image-credits p{font-size:14px;line-height:1.6;color:#61685d;margin:6px 0 0}
+.hero-credit{font-size:12px!important;opacity:.88}
+@media(max-width:960px){
+ .contact-editorial-grid{grid-template-columns:1fr;gap:44px}
+ .contact-message h2{font-size:clamp(70px,11vw,112px)}
+ .contact-actions{max-width:650px}
+}
+@media(max-width:760px){
+ .masthead nav a{font-size:13px}
+ .masthead .resume-link{font-size:13px;padding:12px}
+ .hero-affiliation{font-size:15px;margin-bottom:25px}
+ .hero-desc{font-size:16px}
+ .btn{font-size:14px}
+ .hero-bottom .small,.hero-bottom .small strong,.hero-areas,.hero-bottom .micro{font-size:13px}
+ .work-section .section-intro p:not(.eyebrow){font-size:16px}
+ .note-strip{flex-direction:column;align-items:stretch}
+ .note-strip a.note-button{align-self:flex-start}
+ .project-card .card-meta p{font-size:14px}
+ .contact-editorial{padding:66px 0}
+ .contact-message p{font-size:16px}
+ .contact-actions a{padding:19px;font-size:15px}
+ .editorial-footer-main{flex-wrap:wrap}
+ .image-credits .credit-links{grid-template-columns:1fr 1fr}
+}
+@media(max-width:480px){
+ .contact-actions{grid-template-columns:1fr}
+ .contact-actions .contact-action-primary{grid-column:auto}
+ .contact-message h2{font-size:76px}
+ .editorial-footer-main p{order:3;width:100%}
+ .editorial-footer-main .footer-wordmark{font-size:36px}
+ .image-credits .credit-links{grid-template-columns:1fr}
+}
