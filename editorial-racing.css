@@ -211,3 +211,66 @@ a{color:inherit}a:focus-visible,button:focus-visible{outline:3px solid #bc5b43;o
  .project-card .card-meta h3{font-size:36px}
  .card-meta p{font-size:12px}
 }
+
+
+/* Portfolio gallery refresh — readable editorial hierarchy, equal visual priority. */
+.work-section{padding:96px 0 116px}
+.section-intro{display:block;padding-bottom:32px}
+.section-intro h2{font-size:clamp(60px,6.3vw,94px);line-height:.89;margin:0 0 22px;font-weight:500}
+.section-intro p:not(.eyebrow){max-width:710px;font-size:16px;line-height:1.7;color:#d1d4cc}
+.work-rule{margin-bottom:28px}
+.project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:27px}
+.project-card,.project-card.feature{grid-column:auto;min-width:0}
+.project-card>a{height:100%;display:flex;flex-direction:column;padding:0;overflow:hidden;border:1px solid #636a60;background:#eee9df;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}
+.project-card>a:hover{transform:translateY(-4px);border-color:#b56b58;box-shadow:0 18px 30px #0003}
+.project-card .card-visual,.project-card.feature .card-visual{aspect-ratio:1.56;width:100%;padding:0;overflow:hidden;flex:0 0 auto;background:#b7a99b}
+.project-card .card-visual img,.project-card.bookmatch .card-visual img{width:100%;height:100%;display:block;object-fit:cover;border:0;box-shadow:none}
+.project-card .card-meta{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:24px 27px 28px;min-height:138px;flex:1}
+.project-card .card-meta h3,.project-card.feature .card-meta h3{font:500 clamp(38px,3.8vw,62px)/.96 'Cormorant Garamond',Georgia,serif;letter-spacing:-.044em;margin:0 0 10px}
+.project-card .card-meta p{font-size:15px;line-height:1.55;opacity:.88;letter-spacing:0}
+.project-card .card-meta .side-arrow{flex:0 0 auto;font-size:31px;color:#a64435;line-height:1;align-self:center}
+.project-card.bookmatch>a{background:#eee9df;color:#1a2420;border-color:#d6cfc2}
+.project-card.mcqueen>a{background:#161a18;color:#f3efe6;border-color:#555a55}
+.project-card.mcqueen .card-visual img{filter:brightness(.78) contrast(1.1) saturate(.83);mix-blend-mode:normal}
+.project-card.race-lens>a{background:#e6e7df;color:#1b2926;border-color:#c9cdc4}
+.project-card.race-lens .card-visual{background:#121a1a}
+.project-card.race-lens .card-visual img{object-position:center top}
+.project-card.job-market>a{background:#eee9df;color:#1b2926;border-color:#d6d1c8}
+.project-card.job-market .card-visual{background:radial-gradient(circle at 35% 20%,#33443f,#111a18 78%);padding:38px 48px;display:flex;align-items:center;justify-content:center}
+.project-card.job-market .card-visual img{object-fit:contain;width:100%;height:100%;background:#f5f2ea;border:8px solid #f5f2ea;box-shadow:0 18px 35px #0006}
+.project-card.harvest{grid-column:span 2}
+.project-card.harvest>a{display:grid;grid-template-columns:1.1fr .9fr;background:#eee1d5;color:#35271f;border-color:#d6c3b4}
+.project-card.harvest .card-visual{height:100%;min-height:370px;aspect-ratio:auto;background:#a34f2d}
+.project-card.harvest .card-visual img{object-position:center 25%}
+.project-card.harvest .card-meta{padding:40px;min-height:370px;align-items:center}
+.project-card.harvest .card-meta h3{font-size:clamp(49px,5.4vw,80px);max-width:460px}
+.project-card.harvest .card-meta p{max-width:260px}
+.note-strip{font-size:14px;letter-spacing:0;padding-top:24px;margin-top:34px}
+.hero-media img{filter:saturate(.78) contrast(1.08) brightness(.78);object-position:56% center}
+@media(max-width:900px){
+ .project-grid{grid-template-columns:1fr;gap:22px}
+ .project-card,.project-card.feature,.project-card.harvest{grid-column:auto}
+ .project-card.harvest>a{display:flex;flex-direction:column}
+ .project-card.harvest .card-visual{height:auto;min-height:0;aspect-ratio:1.56}
+ .project-card.harvest .card-meta{min-height:138px;padding:24px 27px 28px}
+ .project-card.harvest .card-meta h3{font-size:clamp(38px,5vw,62px)}
+}
+@media(max-width:760px){
+ .work-section{padding:66px 0 74px}
+ .section-intro h2{font-size:clamp(53px,9vw,74px)}
+ .section-intro p:not(.eyebrow){font-size:15px}
+ .project-card .card-meta,.project-card.harvest .card-meta{padding:21px;min-height:117px}
+ .project-card .card-meta h3,.project-card.feature .card-meta h3,.project-card.harvest .card-meta h3{font-size:clamp(35px,7vw,48px)}
+ .project-card .card-meta p{font-size:14px}
+ .project-card.job-market .card-visual{padding:22px}
+ .hero-media img{object-position:center center}
+}
+@media(max-width:480px){
+ .project-grid{gap:18px}
+ .project-card .card-visual,.project-card.feature .card-visual,.project-card.harvest .card-visual{aspect-ratio:1.45}
+ .project-card .card-meta,.project-card.harvest .card-meta{padding:18px;gap:13px;min-height:104px}
+ .project-card .card-meta h3,.project-card.feature .card-meta h3,.project-card.harvest .card-meta h3{font-size:clamp(33px,8.3vw,42px)}
+ .project-card .card-meta p{font-size:13px}
+ .project-card .card-meta .side-arrow{font-size:24px}
+ .project-card.job-market .card-visual{padding:14px}
+}
