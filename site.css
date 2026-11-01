@@ -224,3 +224,41 @@ body.case.mcqueen .site-footer{color:#d0d7d0}
  body.case.mcqueen .portrait-number{font-size:96px}
  body.case.mcqueen .portrait-credit{right:120px}
 }
+
+
+/* Editorial case-study hierarchy: readable titles without numbered AI-style micro-labels. */
+body.case{font-family:'DM Sans',Arial,sans-serif}
+body.case .site-header nav a{font-size:14px;letter-spacing:0;font-weight:500;text-transform:none}
+body.case .case-heading{padding-top:38px;padding-bottom:55px}
+body.case .case-heading .back{font-size:15px;line-height:1.6;font-weight:500}
+body.case .case-heading h1{font-family:'Cormorant Garamond',Georgia,serif;letter-spacing:-.046em;line-height:.95;font-weight:500;margin:34px 0 18px}
+body.case .case-heading .case-dek{font-size:clamp(17px,1.55vw,21px);line-height:1.65}
+body.case .case-heading .button{font-size:14px;padding:14px 23px}
+body.case .case-heading .text-link{font-size:14px}
+body.case .case-body .chapter{display:block;grid-template-columns:none;padding:60px 0;border-top:1px solid var(--border)}
+body.case .case-body .chapter.chapter-lead{border-top:0;padding-top:22px}
+body.case .case-body .chapter>div{max-width:1070px}
+body.case .case-body .chapter h2{font:500 clamp(43px,5vw,72px)/1.02 'Cormorant Garamond',Georgia,serif;letter-spacing:-.042em;margin:0 0 28px}
+body.case .case-body .chapter p{font-size:clamp(16px,1.45vw,19px);line-height:1.75;max-width:1000px}
+body.case .case-body .chapter .chapter-dek{font-size:clamp(17px,1.55vw,20px)!important;line-height:1.7!important}
+body.case .feature-band{gap:30px}
+body.case .feature-band h2{font:500 clamp(35px,3.8vw,57px)/1.05 'Cormorant Garamond',Georgia,serif;letter-spacing:-.035em;margin-top:0}
+body.case .insight-grid article span,body.case .metric-grid span{font-size:14px!important;line-height:1.5;letter-spacing:0;text-transform:none}
+body.case.mcqueen .site-header .wordmark{color:#f5efe5}
+body.case.mcqueen .case-heading h1{font-size:clamp(70px,8.3vw,122px)}
+body.case.mcqueen .case-heading{padding-top:43px;padding-bottom:72px}
+body.case.mcqueen .case-body .chapter h2{color:#f5f0e7}
+body.case.mcqueen .case-body .chapter p{color:#c6cec6}
+@media(max-width:800px){
+ body.case .case-body .chapter{padding:38px 0}
+ body.case .case-body .chapter h2{font-size:clamp(37px,7vw,55px)}
+ body.case .case-heading h1{margin:25px 0 16px}
+ body.case .case-heading{padding-bottom:37px}
+ body.case .site-header nav a{font-size:12px}
+}
+@media(max-width:480px){
+ body.case .case-body .chapter{padding:30px 0}
+ body.case .case-body .chapter h2{font-size:clamp(35px,9vw,46px)}
+ body.case .case-body .chapter p{font-size:16px}
+ body.case .case-heading .back{font-size:14px}
+}
